@@ -1,0 +1,28 @@
+{
+  "name": "ellie",
+  "version": "1.0.0",
+  "description": "Bot para controle de cargos do Discord.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricardohendges/ellie.git"
+  },
+  "keywords": [],
+  "author": "Ricardo Hendges <ricardohe04@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ricardohendges/ellie/issues"
+  },
+  "homepage": "https://github.com/ricardohendges/ellie#readme",
+  "dependencies": {
+    "discord.js": "^13.8.0",
+    "dotenv": "^16.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
