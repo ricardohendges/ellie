@@ -3,7 +3,10 @@ const welcome = require('./services/welcome')
 const role = require(`./services/role`)
 require('dotenv').config()
 
-const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_MESSAGE_REACTIONS] });
+const client = new Client({
+    intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_MESSAGE_REACTIONS],
+    partials: ['MESSAGE', 'CHANNEL', 'REACTION'],
+})
 client.commands = new Collection()
 client.commands.set(role.name, role)
 
